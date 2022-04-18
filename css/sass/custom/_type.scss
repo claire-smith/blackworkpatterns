@@ -5,7 +5,7 @@
 }
 h1{
 	margin-bottom: 1.9em;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }
 h2 {
 	font-size: 1.35rem;
@@ -79,7 +79,7 @@ article{
 		li{
 			margin-bottom: .8em;
 			&::before {
-				content: "\2022"; 
+				content: "\2022";
 				color: $primary-color;
 				font-weight: bold;
 				display: inline-block;
@@ -107,14 +107,5 @@ article{
 
 	p{
 		line-height: 1.7;
-	}
-
-	body:not(.HomePage) h1,
-	.section .title {
-		font-size: 2rem;
-
-		&:after {
-			width: 200px;
-		}
 	}
 }

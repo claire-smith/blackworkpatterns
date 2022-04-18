@@ -334,6 +334,24 @@ html {
   margin-left: -15px;
 }
 
+.align-items-center {
+  -ms-flex-align: center !important;
+  -webkit-box-align: center !important;
+          align-items: center !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  -webkit-box-pack: center !important;
+          justify-content: center !important;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: -webkit-box !important;
+  display: flex !important;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -1587,67 +1605,15 @@ background: rgb($red, $green, $blue);*/
 /* same as using "background: $color" */
 /* custom variables */
 /*define breakpoints here*/
-label {
-  font-weight: 600;
-}
-
-input[type='text']:focus,
-input[type='number']:focus,
-input[type='date']:focus,
-input[type='password']:focus,
-input[type='email']:focus,
-textarea:focus,
-.dropdown:focus,
-select:focus, .field.checkbox:hover label::before, .checkboxset .checkboxset li:hover label::before {
-  -webkit-box-shadow: inset 0 0 1px 2px #728ce2;
-          box-shadow: inset 0 0 1px 2px #728ce2;
-  border-color: white;
-}
-
-.form-group label, .userform-fields label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-group, .userform-fields {
-  margin-bottom: 1.7rem;
-  position: relative;
-}
-
-.form-group:not(.form-group-checkbox):not(.form-group-radio) > label, .userform-fields:not(.form-group-checkbox):not(.form-group-radio) > label {
-  width: 100%;
-}
-
-.form-group .button, .userform-fields .button, .form-group .btn-toolbar input[type='submit'], .btn-toolbar .form-group input[type='submit'], .userform-fields .btn-toolbar input[type='submit'], .btn-toolbar .userform-fields input[type='submit'] {
-  margin-bottom: 0;
-}
-
-.nav-main li.section a, .nav-main li.section a:hover, .nav-main li.section a:focus, .nav-main li.current a, .nav-main li.current a:hover, .nav-main li.current a:focus, .nav-main li:hover a, .nav-main li:hover a:hover, .nav-main li:hover a:focus {
-  position: relative;
-}
-
-.nav-main li.section a:after, .nav-main li.section a:hover:after, .nav-main li.section a:focus:after, .nav-main li.current a:after, .nav-main li.current a:hover:after, .nav-main li.current a:focus:after, .nav-main li:hover a:after, .nav-main li:hover a:hover:after, .nav-main li:hover a:focus:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #6a2c59;
-  /* The Fallback */
-  background-color: rgba(106, 44, 89, 0.45);
-  height: 7px;
-  border-radius: 50px;
-}
-
 :root {
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  font-family: "Poppins", "Trebuchet MS", sans-serif;
   font-size: 14px;
   color: #2d3748;
 }
 
 h1 {
   margin-bottom: 1.9em;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 h2 {
@@ -1744,23 +1710,15 @@ article ul:not(.ul-reset) li::before {
   p {
     line-height: 1.7;
   }
-  body:not(.HomePage) h1,
-  .section .title {
-    font-size: 2rem;
-  }
-  body:not(.HomePage) h1:after,
-  .section .title:after {
-    width: 200px;
-  }
 }
 
 /***************BUTTON HELPERS********************/
-.button, .btn-toolbar input[type='submit'], .button-secondary, .button-tertiary, .button-text, #ForgotPassword a, .nav__toggle {
+.button, .button-secondary, .button-tertiary, .button-text {
   border: none;
   background: none;
   cursor: pointer;
   font-size: 1rem;
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  font-family: "Poppins", "Trebuchet MS", sans-serif;
   text-align: center;
   display: inline-block;
   -webkit-transition: all 0.2s;
@@ -1768,28 +1726,28 @@ article ul:not(.ul-reset) li::before {
   text-decoration: none;
 }
 
-.button, .btn-toolbar input[type='submit'] {
+.button {
   background-color: #c479af;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
   padding: 1em 1.7em;
   min-width: 80px;
 }
 
-.button:hover, .btn-toolbar input:hover[type='submit'], .button:focus, .btn-toolbar input:focus[type='submit'] {
+.button:hover, .button:focus {
   background-color: #6a2c59;
   color: #fff;
 }
 
 @media (min-width: 576px) {
-  .button, .btn-toolbar input[type='submit'] {
+  .button {
     padding: .8em 1.2em;
   }
 }
 
 .button-secondary {
   background-color: #80c779;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
   padding: 1em 1.7em;
   min-width: 80px;
@@ -1808,7 +1766,7 @@ article ul:not(.ul-reset) li::before {
 
 .button-tertiary {
   background-color: #c479af;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
   padding: 1em 1.7em;
   min-width: 80px;
@@ -1857,19 +1815,19 @@ article ul:not(.ul-reset) li::before {
           transform: translateY(-50%);
 }
 
-.button:disabled, .btn-toolbar input:disabled[type='submit'], .button-secondary:disabled, .button-tertiary:disabled {
+.button:disabled, .button-secondary:disabled, .button-tertiary:disabled {
   background-color: #c2c5c4;
   color: #ffffff;
   cursor: default;
 }
 
-.button:hover:disabled, .btn-toolbar input:hover:disabled[type='submit'], .button-secondary:hover:disabled, .button-tertiary:hover:disabled {
+.button:hover:disabled, .button-secondary:hover:disabled, .button-tertiary:hover:disabled {
   background-color: #989898;
   color: #ffffff;
 }
 
 /**************END BUTTON HELPERS*********************/
-.button-text, #ForgotPassword a {
+.button-text {
   color: #2d3748;
   border-bottom: 2px solid transparent;
   padding: 0.2em;
@@ -1878,308 +1836,26 @@ article ul:not(.ul-reset) li::before {
   font-weight: bold;
 }
 
-.button-text:hover, #ForgotPassword a:hover, .button-text:focus, #ForgotPassword a:focus {
+.button-text:hover, .button-text:focus {
   border-bottom-color: #c479af;
   color: #2d3748;
 }
 
-/* Custom form styling here */
-input[type=text],
-input[type=number],
-input[type=date],
-input[type=password],
-input[type=email],
-textarea,
-.dropdown,
-select {
-  width: 100%;
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  border: none;
-  background-color: #353E51;
-  color: white;
-  border-radius: 4px;
+.button_etsy {
+  background-color: #F98531;
+  padding-right: 2em;
+  font-size: .95rem;
 }
 
-input[type='text']:focus,
-input[type='number']:focus,
-input[type='date']:focus,
-input[type='password']:focus,
-input[type='email']:focus,
-textarea:focus,
-.dropdown:focus,
-select:focus {
-  outline: 0;
+.button_etsy:hover, .button_etsy:focus {
+  background-color: #E46E17;
 }
 
-input[type='text'].error,
-input[type='number'].error,
-input[type='date'].error,
-input[type='password'].error,
-input[type='email'].error,
-textarea.error,
-.dropdown.error,
-select.error {
-  border-color: #310606;
-}
-
-input[type='text'].error:focus,
-input[type='number'].error:focus,
-input[type='date'].error:focus,
-input[type='password'].error:focus,
-input[type='email'].error:focus,
-textarea.error:focus,
-.dropdown.error:focus,
-select.error:focus {
-  -webkit-box-shadow: inset 0 0 1px 1px #310606;
-          box-shadow: inset 0 0 1px 1px #310606;
-}
-
-input[type='text'].valid,
-input[type='number'].valid,
-input[type='date'].valid,
-input[type='password'].valid,
-input[type='email'].valid,
-textarea.valid,
-.dropdown.valid,
-select.valid {
-  border-color: #064a06;
-}
-
-input[type='text'].valid:focus,
-input[type='number'].valid:focus,
-input[type='date'].valid:focus,
-input[type='password'].valid:focus,
-input[type='email'].valid:focus,
-textarea.valid:focus,
-.dropdown.valid:focus,
-select.valid:focus {
-  -webkit-box-shadow: inset 0 0 1px 1px #064a06;
-          box-shadow: inset 0 0 1px 1px #064a06;
-}
-
-input[type='text']::-webkit-input-placeholder,
-input[type='number']::-webkit-input-placeholder,
-input[type='date']::-webkit-input-placeholder,
-input[type='password']::-webkit-input-placeholder,
-input[type='email']::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-.dropdown::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  font-style: italic;
-  color: rgba(89, 97, 111, 0.59);
-}
-
-input[type='text']:-ms-input-placeholder,
-input[type='number']:-ms-input-placeholder,
-input[type='date']:-ms-input-placeholder,
-input[type='password']:-ms-input-placeholder,
-input[type='email']:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-.dropdown:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  font-style: italic;
-  color: rgba(89, 97, 111, 0.59);
-}
-
-input[type='text']::-ms-input-placeholder,
-input[type='number']::-ms-input-placeholder,
-input[type='date']::-ms-input-placeholder,
-input[type='password']::-ms-input-placeholder,
-input[type='email']::-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-.dropdown::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  font-style: italic;
-  color: rgba(89, 97, 111, 0.59);
-}
-
-input[type='text']::placeholder,
-input[type='number']::placeholder,
-input[type='date']::placeholder,
-input[type='password']::placeholder,
-input[type='email']::placeholder,
-textarea::placeholder,
-.dropdown::placeholder,
-select::placeholder {
-  font-style: italic;
-  color: rgba(89, 97, 111, 0.59);
-}
-
-/* remove default browser arrow */
-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  text-indent: 0.1;
-  text-overflow: '';
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-/* end remove arrow */
-.dropdown,
-select {
-  padding: 0.8em 0.8em;
-  padding-right: 30px;
-  background-image: url("../img/icons/select-arrow.svg");
-  background-size: 14px;
-  background-position: calc(100% - 14px) calc(100% - 48%);
+.button-icon_chevron {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185.343 185.343'%3E%3Cpath d='M51.707 185.343a10.692 10.692 0 0 1-7.593-3.149 10.724 10.724 0 0 1 0-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 0 1-7.587 3.15z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-}
-
-.dropdown option,
-select option {
-  padding: 0.8em 0.8em 0;
-}
-
-label.error {
-  color: #310606;
-  font-weight: normal;
-  padding: 0.5em 0;
-}
-
-.Actions input[type="submit"] {
-  float: right;
-}
-
-form {
-  overflow: hidden;
-}
-
-form h2 {
-  font-size: 1.2rem;
-  margin-bottom: 2em;
-}
-
-.message, #uff p {
-  padding: .2em .5em;
-  display: inline-block;
-}
-
-.message.success, #uff p {
-  color: white;
-  background: #4CAF50;
-}
-
-.message.error, #uff p.error {
-  color: #fbfbfb;
-  background: #D75350;
-}
-
-input + .error, textarea + .error, select + .error {
-  position: relative;
-  margin-top: .5rem;
-}
-
-input + .error:before, textarea + .error:before, select + .error:before {
-  content: '';
-  display: block;
-  background: #D75350;
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  height: 10px;
-  width: 10px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.field.checkbox, .checkboxset .checkboxset li {
-  /*Hide the checkmark by default*/
-  /*Unhide on the checked state*/
-  /*Adding focus styles on the outer-box of the fake checkbox*/
-  /* on hover */
-  /*checked */
-}
-
-.field.checkbox input[type="checkbox"], .checkboxset .checkboxset li input[type="checkbox"] {
-  opacity: 0;
-  display: none;
-}
-
-.field.checkbox label, .checkboxset .checkboxset li label {
-  position: relative;
-  display: inline-block;
-  padding-left: 36px;
-  padding-top: 10px;
-  font-weight: normal;
-  /*Outer box of the fake checkbox*/
-  /*Checkmark of the fake checkbox*/
-}
-
-.field.checkbox label::before, .field.checkbox label::after, .checkboxset .checkboxset li label::before, .checkboxset .checkboxset li label::after {
-  position: absolute;
-  content: "";
-  /*Needed for the line-height to take effect*/
-  display: inline-block;
-}
-
-.field.checkbox label::before, .checkboxset .checkboxset li label::before {
-  height: 30px;
-  width: 30px;
-  background-color: #353E51;
-  border: 1px solid #bac6ff;
-  left: 0px;
-  top: 3px;
-}
-
-.field.checkbox label::after, .checkboxset .checkboxset li label::after {
-  height: 7px;
-  width: 13px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
-  left: 9px;
-  top: 13px;
-}
-
-.field.checkbox input[type="checkbox"] + label::after, .checkboxset .checkboxset li input[type="checkbox"] + label::after {
-  content: none;
-}
-
-.field.checkbox input[type="checkbox"]:checked + label::after, .checkboxset .checkboxset li input[type="checkbox"]:checked + label::after {
-  content: "";
-}
-
-.field.checkbox input[type="checkbox"]:focus + label::before, .checkboxset .checkboxset li input[type="checkbox"]:focus + label::before {
-  outline: #c479af auto 5px;
-}
-
-.field.checkbox:hover label::before, .checkboxset .checkboxset li:hover label::before {
-  outline: 0;
-}
-
-.field.checkbox input:checked + label::before, .checkboxset .checkboxset li input:checked + label::before {
-  background-color: #c479af;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.field {
-  margin-bottom: 1.7rem;
-}
-
-.requiredField label:after {
-  content: "*";
-  font-weight: 400;
-  padding-left: 3px;
-}
-
-#ForgotPassword {
-  margin-top: 3rem;
+  background-position: 96% 1rem;
+  background-size: 1em;
 }
 
 body {
@@ -2205,22 +1881,69 @@ body {
   margin-right: auto;
 }
 
+#header {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+#header h1 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+#header [class*="col-"] {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logo {
+  margin: auto .5rem;
+  display: inline-block;
+}
+
+#logo svg, #logo img {
+  width: 100px;
+  display: block;
+}
+
+.product-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card-meta {
+  font-size: .8rem;
+  color: #2d3748;
+  margin: 0;
+}
+
+.card:hover img, .card:focus img {
+  opacity: .8;
+}
+
+.card:hover .card-meta, .card:focus .card-meta {
+  text-decoration: underline;
+}
+
+.banner-info {
+  text-align: center;
+  background: rgba(188, 88, 188, 0.2);
+  color: #BC58BC;
+  font-weight: bold;
+  max-width: 825px;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
 #main {
   position: relative;
   min-height: 80vh;
   padding-bottom: 4rem;
-}
-
-.icon-pdf {
-  background-image: url("../images/icons/pdf.svg");
-}
-
-.icon-eps {
-  background-image: url("../images/icons/eps.svg");
-}
-
-.icon-video {
-  background-image: url("../images/icons/play-button.svg");
 }
 
 @media (min-width: 576px) {
@@ -2239,241 +1962,18 @@ body {
   }
 }
 
-#logo {
-  margin-bottom: .5rem;
-}
-
-#logo svg, #logo img {
-  width: 100px;
-  display: block;
-}
-
-#header {
-  padding: 1rem 0;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-  border-bottom: 1px solid #D7D9DD;
-  background: white;
-}
-
-#header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-flow: nowrap;
-      flex-flow: nowrap;
-}
-
-.nav__toggle {
-  padding: .8rem 1rem;
-  z-index: 100;
-  /* 
-	* Transform all the slices of hamburger
-	* into a crossmark.
-	*/
-  /*
-	* But let's hide the middle one.
-	*/
-  /*
-	* Ohyeah and the last one should go the other direction
-	*/
-}
-
-.nav__toggle .icon-bar {
-  display: block;
-  width: 33px;
-  height: 3px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: #888;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 6px;
-          transform-origin: 4px 6px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-.nav__toggle .icon-bar.bottom-bar {
-  -webkit-transform-origin: 9px 0;
-          transform-origin: 9px 0;
-}
-
-.nav__toggle.collapsed .icon-bar {
-  opacity: 1;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.nav__toggle.collapsed .icon-bar.middle-bar {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.nav__toggle.collapsed .icon-bar.bottom-bar {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.header-links {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  padding: 1rem;
-  width: 100%;
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0.3s linear,opacity 0.3s linear;
-  transition: visibility 0.3s linear,opacity 0.3s linear;
-}
-
-.header-links.active {
-  visibility: visible;
-  opacity: 1;
-  z-index: 50;
-}
-
-.header-links a {
-  color: #6a2c59;
-  padding-bottom: .5rem;
-}
-
-.header-links li {
-  margin-bottom: 1.3rem;
-}
-
-.nav-main li.section a:after, .nav-main li.section a:hover:after, .nav-main li.section a:focus:after, .nav-main li.current a:after, .nav-main li.current a:hover:after, .nav-main li.current a:focus:after, .nav-main li:hover a:after, .nav-main li:hover a:hover:after, .nav-main li:hover a:focus:after {
-  background: #c479af;
-}
-
-@media (min-width: 577px) {
-  #header {
-    position: relative;
-  }
-  #header .container .links {
-    width: 70%;
-  }
-}
-
-@media (min-width: 993px) {
-  #header {
-    padding: .8rem 0;
-  }
-  #header .nav__toggle {
-    display: none;
-  }
-  #header .nav-main {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  #header .nav-secondary {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  #header .header-links {
-    position: relative;
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    opacity: 1;
-    visibility: visible;
-    font-size: .9rem;
-  }
-  #header .tel {
-    padding: 0;
-    display: inline;
-    font-size: 1rem;
-    margin-top: 0;
-  }
-  #header .social-media {
-    margin-right: 2rem;
-  }
-  #header .social-media li:not(:last-child) {
-    margin-right: 1rem;
-  }
-  #header .social-media svg {
-    width: 40px;
-    height: 40px;
-  }
-  .nav-main {
-    display: block;
-    margin-top: .7rem;
-    margin-right: -.5em;
-  }
-  .nav-main ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .nav-main li {
-    margin-left: .5em;
-    margin-bottom: 0;
-  }
-  .nav-main li:first-child {
-    display: none;
-  }
-  .nav-main a span {
-    border-bottom: 2px solid transparent;
-    padding-bottom: 0.2em;
-    display: block;
-    -webkit-transition: border .5s ease;
-    transition: border .5s ease;
-  }
-  .nav-secondary {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    font-size: 1.2rem;
-  }
-  .nav-secondary ul {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media (min-width: 1201px) {
+@media (min-width: 769px) {
   #logo svg, #logo img {
     width: 110px;
   }
-  .nav-main li {
-    margin-left: 1em;
+  #header {
+    text-align: left;
   }
-}
-
-#footer {
-  background-color: green;
-  color: white;
+  #header #logo-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 /******************/
