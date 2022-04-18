@@ -1,4 +1,15 @@
 #footer {
 	background-color: $footer-bg;
-	color:$footer-color;	
+	color:$footer-color;
+	text-align: center;
+	font-size: .9rem;
+	padding-top: 1rem;
+	a{
+		color: $footer-links-color;
+	}
+
+	.social svg{
+		vertical-align: middle;
+	}
+
 }

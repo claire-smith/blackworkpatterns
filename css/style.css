@@ -1640,13 +1640,13 @@ p {
 }
 
 a {
-  color: #c479af;
+  color: #BC58BC;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
 a:hover, a:focus {
-  color: #80c779;
+  text-decoration: underline;
 }
 
 a:focus {
@@ -1656,7 +1656,7 @@ a:focus {
 
 #main article p a, #main article :not(nav) ul a, #main article ol a {
   color: #2d3748;
-  border-bottom: 2px solid #c479af;
+  border-bottom: 2px solid #BC58BC;
 }
 
 #main article p a:hover, #main article p a:focus, #main article :not(nav) ul a:hover, #main article :not(nav) ul a:focus, #main article ol a:hover, #main article ol a:focus {
@@ -1690,7 +1690,7 @@ article ul:not(.ul-reset) li {
 
 article ul:not(.ul-reset) li::before {
   content: "\2022";
-  color: #c479af;
+  color: #BC58BC;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -1727,7 +1727,7 @@ article ul:not(.ul-reset) li::before {
 }
 
 .button {
-  background-color: #c479af;
+  background-color: #BC58BC;
   border-radius: 10px;
   color: #fff;
   padding: 1em 1.7em;
@@ -1765,7 +1765,7 @@ article ul:not(.ul-reset) li::before {
 }
 
 .button-tertiary {
-  background-color: #c479af;
+  background-color: #BC58BC;
   border-radius: 10px;
   color: #fff;
   padding: 1em 1.7em;
@@ -1837,7 +1837,7 @@ article ul:not(.ul-reset) li::before {
 }
 
 .button-text:hover, .button-text:focus {
-  border-bottom-color: #c479af;
+  border-bottom-color: #BC58BC;
   color: #2d3748;
 }
 
@@ -1854,7 +1854,7 @@ article ul:not(.ul-reset) li::before {
 .button-icon_chevron {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185.343 185.343'%3E%3Cpath d='M51.707 185.343a10.692 10.692 0 0 1-7.593-3.149 10.724 10.724 0 0 1 0-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 0 1-7.587 3.15z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: 96% 1rem;
+  background-position: 96% 50%;
   background-size: 1em;
 }
 
@@ -1884,7 +1884,7 @@ body {
 #header {
   text-align: center;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #header h1 {
@@ -1896,6 +1896,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#header .button_etsy {
+  margin-top: 1rem;
 }
 
 #logo {
@@ -1916,10 +1920,17 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.intro {
+  text-align: center;
+  font-size: .8rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
 .card-meta {
   font-size: .8rem;
   color: #2d3748;
-  margin: 0;
+  margin: .6em 0;
 }
 
 .card:hover img, .card:focus img {
@@ -1932,18 +1943,17 @@ body {
 
 .banner-info {
   text-align: center;
-  background: rgba(188, 88, 188, 0.2);
+  background: #F2DEF2;
   color: #BC58BC;
   font-weight: bold;
   max-width: 825px;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem;
 }
 
 #main {
   position: relative;
   min-height: 80vh;
-  padding-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -1974,6 +1984,25 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  #header .button_etsy {
+    margin-top: 0;
+  }
+}
+
+#footer {
+  background-color: #BC58BC;
+  color: white;
+  text-align: center;
+  font-size: .9rem;
+  padding-top: 1rem;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer .social svg {
+  vertical-align: middle;
 }
 
 /******************/

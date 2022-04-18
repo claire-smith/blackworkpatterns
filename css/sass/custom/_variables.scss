@@ -28,7 +28,7 @@ $font-family: 'Poppins', 'Trebuchet MS', sans-serif;
 $font-family-alt: 'Nunito', 'Trebuchet MS', sans-serif;
 
 $color-brand-dark: #6a2c59;
-$color-brand: #c479af;
+$color-brand: #BC58BC;
 $color-brand-light: #EFDBEA;
 
 $color-brand-secondary-dark: #36630b;
@@ -58,7 +58,7 @@ $title-color: $color-brand-dark;
 $nav-color: $color-brand-dark;
 
 
-$footer-bg: green;
+$footer-bg: $color-brand;
 $footer-color: white;
 $footer-links-color:white;
 
