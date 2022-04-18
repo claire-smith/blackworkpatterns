@@ -1,0 +1,139 @@
+/*define breakpoints here*/
+$breakpoints: (
+	'CustomSmall': 430px,
+	'phone': 576px,
+	'tablet': 768px,
+	'tabletWide': 992px,
+	'desktop': 1024px,
+	'extraLarge': 1200px
+);
+
+//layout
+%container{
+	@extend .container;
+}
+%container-read-layout{
+	@extend .container-read-layout;
+}
+	//prevent items being too wide when on mobile
+%item-wrap{
+	margin: 0 auto 2rem;
+    max-width: 325px;
+}
+$container-max-width: 1220px;
+$container-read-layout-max-width: 805px;
+
+
+$font-family: 'Montserrat', 'Trebuchet MS', sans-serif;
+$font-family-alt: 'Nunito', 'Trebuchet MS', sans-serif;
+
+$color-brand-dark: #6a2c59;
+$color-brand: #c479af;
+$color-brand-light: #EFDBEA;
+
+$color-brand-secondary-dark: #36630b;
+$color-brand-secondary: #80c779;
+$color-brand-secondary-light: #DDF0DB;
+
+$primary-color: $color-brand;
+$primary-color-dark:$color-brand-dark;
+
+$secondary-color: $color-brand-secondary;
+$secondary-color-dark: $color-brand-secondary-dark;
+
+$tertiary-color: #2d3748;
+
+$error-color: #310606;
+$error-bg: #ff9e94;
+$valid-color: #064a06;
+$valid-bg: #b9f7c9;
+$inform-color: #061431;
+$inform-bg: #fed76d;
+$disabled-color: #c2c5c4;
+$highlight-bg: #ebf8ff;
+
+$body-color: $tertiary-color;
+$title-color: $color-brand-dark;
+
+$nav-color: $color-brand-dark;
+
+
+$footer-bg: green;
+$footer-color: white;
+$footer-links-color:white;
+
+
+$button-bg: $color-brand;
+$button-bg-hover: $color-brand-dark;
+
+$breadcrumb-sep-color: #222;
+$breadcrumb-color: $color-brand-dark;
+$breadcrumb-color-active: #222;
+
+$form-element-padding-top-bottom: 0.8em;
+$form-element-padding-left-right: 0.8em;
+
+$field-border: #ccd4dd;
+$field-width: 100%;
+$field-padding: $form-element-padding-top-bottom $form-element-padding-left-right;
+$field-padding-large: 1em;
+$field-radius: 4px;
+$field-margin-bottom: 1.7rem;
+$field-bg: #353E51;
+$field-color: white;
+
+%field-required{
+	content: "*";
+    font-weight: 400;
+    padding-left: 3px;
+}
+
+$left-space: 1rem;
+
+$border-radius-style: 4px;
+
+$background-overlay-gradient: linear-gradient(180deg, rgba(4, 25, 62, 0) 0%, rgba(4, 25, 62, 0.7) 100%);
+
+
+%labelstyle {
+	font-weight: 600;
+}
+%fieldoutline {
+	box-shadow: inset 0 0 1px 2px #728ce2;
+	border-color: white;
+}
+%formgroup-label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+%field-group {
+	margin-bottom: $field-margin-bottom;
+	position: relative;
+
+	label {
+		@extend %formgroup-label;
+	}
+
+	&:not(.form-group-checkbox):not(.form-group-radio) > label {
+		width: 100%;
+	}
+
+	.button {
+		margin-bottom: 0;
+	}
+}
+
+//menu
+%active-nav{
+	position: relative;
+	&:after {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		@include background-opacity($primary-color-dark,.45);
+		height:7px;
+		border-radius:50px;
+	}
+}

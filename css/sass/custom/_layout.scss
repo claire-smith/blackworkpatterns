@@ -1,0 +1,63 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.container, #header .wrapper {
+	max-width: $container-max-width;
+}
+.container-read-layout{
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: $container-read-layout-max-width;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+//======================
+// main area - add gradient to bottom of the page
+//======================
+
+#main{
+	position: relative;
+	min-height: 80vh;
+	padding-bottom: 4rem;
+}
+
+
+
+.icon-pdf{
+	background-image: url('../images/icons/pdf.svg');
+}
+.icon-eps{
+	background-image: url('../images/icons/eps.svg');
+}
+
+.icon-video{
+	background-image: url('../images/icons/play-button.svg');
+}
+
+
+
+@include media('>=phone') {
+	//change all bootstrap columns padding
+	$unit: 20px;
+
+	.container,.container-read-layout{
+		padding-right: $unit;
+    	padding-left: $unit;
+	}
+
+	[class*='col-'],
+	.col {
+		padding-left: $unit;
+		padding-right: $unit;
+	}
+	.row {
+		margin-right: -$unit;
+		margin-left: -$unit;
+	}
+
+}

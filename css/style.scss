@@ -1,0 +1,21 @@
+@import 'sass/base/reset';
+@import 'sass/base/helpers';
+@import 'sass/base/form';
+@import 'sass/base/include-media'; /*media queries function file from http://include-media.com/documentation/ */
+@import 'sass/base/bootstrap-4-grid';
+//mixins
+@import 'sass/base/mixins';
+
+/* custom variables */
+@import 'sass/custom/variables';
+@import 'sass/custom/type';
+@import 'sass/custom/buttons';
+@import 'sass/custom/form';
+
+@import 'sass/custom/layout';
+//@import 'sass/custom/pages';
+@import 'sass/custom/header';
+@import 'sass/custom/footer';
+//@import 'sass/custom/cookies';
+
+/******************/
