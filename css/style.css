@@ -1845,6 +1845,8 @@ article ul:not(.ul-reset) li::before {
   background-color: #F98531;
   padding-right: 2em;
   font-size: .95rem;
+  -webkit-box-shadow: inset 0 -3px 0 0 #00000040;
+          box-shadow: inset 0 -3px 0 0 #00000040;
 }
 
 .button_etsy:hover, .button_etsy:focus {
