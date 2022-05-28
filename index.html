@@ -12,14 +12,22 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDMMTX9SJX"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		let url = window.location.hostname
+        if(url != '127.0.0.1'){
+            var script = document.createElement('script');
+            script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-YDMMTX9SJX');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('async', true);
+            document.getElementsByTagName('head')[0].appendChild(script);
 
-	gtag('config', 'G-YDMMTX9SJX');
+            window.onload = function(){
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());gtag('config', 'G-YDMMTX9SJX');
+            }
+
+        }
 	</script>
 
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -40,7 +48,7 @@
 					<h1>Modern Blackwork patterns by Trunky Stitches</h1>
 				</div>
 				<div class="col-md-4 d-flex align-items-center">
-					<a href="https://www.etsy.com/shop/TrunkyStitches" target="_blank" class="button button_etsy button-icon_chevron">Purchase patterns on my Etsy Shop</a>
+					<a href="https://www.etsy.com/shop/TrunkyStitches?ref=own-website-v1-header-button" target="_blank" class="button button_etsy button-icon_chevron">Purchase patterns on my Etsy Shop</a>
 				</div>
 			</div>
 
@@ -50,16 +58,16 @@
 
 	<main id="main">
 		<div class="container">
-			<p class="intro">I design modern, vibrant blackwork embroidery patterns. A small selection are showcased below. <br/>Visit <a href="https://www.etsy.com/shop/TrunkyStitches" target="_blank"><strong>my etsy shop</strong></a> for more patterns and to purchase x</p>
+			<p class="intro">I design modern, vibrant blackwork embroidery patterns. A small selection are showcased below. <br/>Visit <a href="https://www.etsy.com/shop/TrunkyStitches?ref=own-website-v1-header-intro" target="_blank"><strong>my etsy shop</strong></a> for more patterns and to purchase x</p>
 			<div class="product-grid">
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1006230470/rainbow-blackwork-pattern-geometric" target="_blank"><img src="./img/products/rb.jpg" alt="Geometric rainbow blackwork stitched with a repeating motif"> <h2 class="card-meta">Rainbow geometric repeating blackwork pattern <br/>$6.85 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1087848039/bees-and-flowers-blackwork-pattern-pdf" target="_blank"><img src="./img/products/bee.jpg" alt="Cute bee blackwork embroidery pattern in geometric shapes." srcset=""><h2 class="card-meta">Monoschrome bee and flowers blackwork pattern <br/>$7.22 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1052520955/blackwork-pattern-floral-geometric" target="_blank"><img src="./img/products/leaves.jpg" alt="Rainbow geometric leaves blackwoork design stitched on 14 count aida fabric"><h2 class="card-meta">Geometric rainbow leaves blackwork pattern <br/>$6.49 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1183667441/fox-blackwork-pattern-pdf" target="_blank"><img src="./img/products/fox.jpg" alt="Repeating geometric fox blackwork stitched design. Framed in a hoop"><h2 class="card-meta">Woodland fox blackwork pattern <br/>$6.41 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1062409842/modern-blackwork-mandala-flower-chart" target="_blank"><img src="./img/products/mandala.jpg" alt="Stitched mandala design in shades of yellow and pink." srcset=""><h2 class="card-meta">Blackwork mandala variegated pattern <br/>$6.85 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1160232798/blackwork-pattern-cactus-plants-on" target="_blank"><img src="./img/products/cactus.jpg" alt="Stitched cactus plants on shelves with bees and butterflies. Blackwork embroidery" srcset=""><h2 class="card-meta">Cactus shelves with bees and butterflies blackwork pattern <br/>$6.49 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1060647215/blackwork-feathers-pattern-peacock-and" target="_blank"><img src="./img/products/feathers-large.jpg" alt="Blackwork design of two stitched feathers in shades of blue and orange" srcset=""><h2 class="card-meta">Large peacock and phoenix blackwork feathers pattern <br/>$6.41 USD</h2></a></div>
-				<div class="card"><a href="https://www.etsy.com/uk/listing/1110240599/blackwork-rainbow-diamonds-in-the-sky" target="_blank"><img src="./img/products/rb-dark.jpg" alt="Geometric repeating pattern stitched in rainbow colours and framed in an embroidery hoop" srcset=""><h2 class="card-meta">Geometric abstract rainbow blackwork pattern <br/>$6.85 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1006230470/rainbow-blackwork-pattern-geometric?ref=own-website-v1" target="_blank"><img src="./img/products/rb.jpg" alt="Geometric rainbow blackwork stitched with a repeating motif"> <h2 class="card-meta">Rainbow geometric repeating blackwork pattern <br/>$6.85 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1087848039/bees-and-flowers-blackwork-pattern-pdf?ref=own-website-v1" target="_blank"><img src="./img/products/bee.jpg" alt="Cute bee blackwork embroidery pattern in geometric shapes." srcset=""><h2 class="card-meta">Monochrome bee and flowers blackwork pattern <br/>$7.22 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1052520955/blackwork-pattern-floral-geometric?ref=own-website-v1" target="_blank"><img src="./img/products/leaves.jpg" alt="Rainbow geometric leaves blackwoork design stitched on 14 count aida fabric"><h2 class="card-meta">Geometric rainbow leaves blackwork pattern <br/>$6.49 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1183667441?ref=own-website-v1" target="_blank"><img src="./img/products/fox.jpg" alt="Repeating geometric fox blackwork stitched design. Framed in a hoop"><h2 class="card-meta">Woodland fox blackwork pattern <br/>$6.41 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1062409842?ref=own-website-v1" target="_blank"><img src="./img/products/mandala.jpg" alt="Stitched mandala design in shades of yellow and pink." srcset=""><h2 class="card-meta">Blackwork mandala variegated pattern <br/>$6.85 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1160232798/blackwork-pattern-cactus-plants-on?ref=own-website-v1" target="_blank"><img src="./img/products/cactus.jpg" alt="Stitched cactus plants on shelves with bees and butterflies. Blackwork embroidery" srcset=""><h2 class="card-meta">Cactus shelves with bees and butterflies blackwork pattern <br/>$6.49 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1060647215?ref=own-website-v1" target="_blank"><img src="./img/products/feathers-large.jpg" alt="Blackwork design of two stitched feathers in shades of blue and orange" srcset=""><h2 class="card-meta">Large peacock and phoenix blackwork feathers pattern <br/>$6.41 USD</h2></a></div>
+				<div class="card"><a href="https://www.etsy.com/uk/listing/1110240599?ref=own-website-v1" target="_blank"><img src="./img/products/rb-dark.jpg" alt="Geometric repeating pattern stitched in rainbow colours and framed in an embroidery hoop" srcset=""><h2 class="card-meta">Geometric abstract rainbow blackwork pattern <br/>$6.85 USD</h2></a></div>
 			</div>
 		</div>
 		<p class="banner-info">New website coming soon!</p>
