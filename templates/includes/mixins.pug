@@ -1,0 +1,65 @@
+mixin review_element(review)
+  .single-comment.justify-content-between.d-flex
+    .user.justify-content-between.d-flex
+      .thumb.text-center
+        h6= review.name
+      .desc
+        .product-rate.d-inline-block
+          .product-rating(style="width:"+ review.percent + "%")
+        p= review.comment
+        .d-flex.justify-content-between
+          .d-flex.align-items-center
+            p.font-xs.mr-30 #{review.date}
+
+
+mixin related_product_element(name, sku, url, percent, label, review_count)
+  .col-lg-3.col-md-4.col-12.col-sm-6
+    .product-cart-wrap.small.hover-up
+      .product-img-action-wrap
+        .product-img.product-img-zoom
+          a(href="/patterns/"+ url + ".html", tabindex="0")
+            img.default-img(src="/assets/bwp/imgs/shop/products/"+ sku + "_1.jpg", alt="Stitched "+ name + "")
+            //-img.hover-img(src="/assets/bwp/imgs/shop/feat/category-thumb-1.jpg", alt="")
+        if(label != "")
+          .product-badges.product-badges-position.product-badges-mrg
+            span.hot #{label}
+      .product-content-wrap
+        h2
+          a(href="/patterns/"+ url + ".html", tabindex="0") #{name}
+        .product-detail-rating
+          .product-rate-cover.text-end
+            .product-rate.d-inline-block
+              .product-rating(style="width:"+ percent + "%")
+          span= " (" + review_count + ")"
+
+mixin product_element(name, sku, url, percent, review_count, label)
+  .col-lg-4.col-md-4.col-12.col-sm-6
+    .product-cart-wrap.mb-30
+      .product-img-action-wrap
+        .product-img.product-img-zoom
+          a(href="/patterns/" + url + ".html")
+            img.default-img(src="/assets/bwp/imgs/shop/products/"+ sku + "_1.jpg", alt="Stitched "+ name + "")
+        if(label != "")
+          .product-badges.product-badges-position.product-badges-mrg
+            span.hot #{label}
+      .product-content-wrap
+        //-.product-category
+          a(href="shop-grid-right.html") Music
+        h2
+          a(href="shop-product-right.html") #{name}
+        .product-detail-rating
+          .product-rate-cover.text-end
+            .product-rate.d-inline-block
+              .product-rating(style="width:"+ percent + "%")
+          span= " (" + review_count + ")"
+        //-.product-price
+          span $238.85
+          span.old-price $245.8
+
+mixin feat_product(name, sku, url)
+  .card-1
+    figure.img-hover-scale.overflow-hidden
+      a(href="/patterns/" + url + ".html")
+        img(src="/assets/bwp/imgs/shop/feat/"+ sku + ".jpg", alt="Stitched "+ name + "")
+    h5
+      a(href="/patterns/" + url + ".html") #{name}

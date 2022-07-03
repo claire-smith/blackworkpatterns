@@ -1,0 +1,49 @@
+extends _template-layout
+
+block nav
+	- var active = "blog"
+
+block main
+	main.main
+	.page-header.breadcrumb-wrap
+		.container
+			.breadcrumb
+				a(href="/index.html", rel="nofollow") Home
+				span
+				a(href="/blog.html", rel="nofollow") Blog
+				span
+				| #{article_title}
+
+	section.mt-50.mb-50
+		.container.custom
+			.row
+				.col-lg-8.m-auto
+					.single-page.pl-30
+						.single-header.style-2
+							h1.mb-30 #{article_title}
+							.single-header-meta
+								.entry-meta.meta-1.font-xs.mt-15.mb-15
+									span.post-by By Claire
+									span.post-on.has-dot #{article_date}
+									span.time-reading.has-dot #{article_duration} mins read
+								//-.social-icons.single-share
+									ul.text-grey-5.d-inline-block
+										li
+											strong.mr-10 Share this:
+										li.social-facebook
+											a(href="#")
+												img(src="assets/imgs/theme/icons/icon-facebook.svg", alt=)
+										li.social-twitter
+											a(href="#")
+												img(src="assets/imgs/theme/icons/icon-twitter.svg", alt=)
+										li.social-instagram
+											a(href="#")
+												img(src="assets/imgs/theme/icons/icon-instagram.svg", alt=)
+										li.social-linkedin
+											a(href="#")
+												img(src="assets/imgs/theme/icons/icon-pinterest.svg", alt=)
+						figure.single-thumbnail
+							img(src="/assets/bwp/imgs/blog/" + article_photo + ".jpg", alt="")
+
+						.single-content
+							block article

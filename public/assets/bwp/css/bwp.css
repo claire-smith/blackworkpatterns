@@ -1,0 +1,177 @@
+/****************************/
+/* General overwrites */
+a{
+	color:#BC58BC;
+}
+.btn{
+    border-radius: 50px;
+}
+
+#footer{
+    border-top:5px solid #BC58BC;
+    background: #f7f7f7;
+}
+
+
+.content-restrict{
+    max-width: 500px
+}
+        /* Header */
+.header-style-5 .logo.logo-width-1 a{
+	display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.header-style-5 .logo.logo-width-1 a img {
+    width: 100px;
+    min-width: 100px;
+	margin-right: 1rem;
+	margin-bottom: 5px;
+}
+
+        /* Navigation bar */
+.main-menu.main-menu-mrg-1 {
+    margin-bottom: -7px;
+}
+.main-menu > nav > ul > li > a {
+    border-bottom: 7px solid transparent;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.main-menu > nav > ul > li > a.active {
+    color: black;
+    border-bottom-color: #BC58BC;
+}
+.sticky-bar, .sticky-bar.stick {
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 19%);
+	border-bottom:none;
+}
+.main-menu > nav > ul > li:hover > a {
+    color: #BC58BC;
+}
+.header-action-btn-shop .btn{
+    background-color: #ef7513;
+    border: none;
+}
+.header-action-btn-shop .btn > i{
+    margin-right: 0.5rem;
+}
+
+        /* sections */
+.section-area h2.section-title{
+    text-align: center;
+}
+.section-intro{
+    max-width:680px;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+}
+.title-style{
+    position: relative;
+}
+.title-style:after{
+    content: "";
+    height: 6px;
+    width: 40px;
+    background-color: #BC58BC;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+.title-style span{
+    color: #323232;
+}
+        /* cards */
+.card-1{
+    border:none;
+}
+/**********************************/
+/* PAGE :: Home */
+
+/*      Section :: Banners */
+.banner-img.banner-1.home-3 .banner-text {
+    background: rgb(229 241 255 / 55%);
+}
+.banner-2 a{
+    color:white;
+}
+
+/*      Setion :: Feat patterns */
+.carausel-feat {
+    overflow: hidden;
+    margin: 0 -12px;
+}
+.carausel-feat .card-1 {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+/**********************************/
+/* PAGE :: PRODUCTS LIST */
+
+.widget-category ul > li a.active {
+    color: #BC58BC;
+    font-weight: bold;
+}
+.product-cart-wrap .product-rate{
+    display: flex;
+    align-items: baseline;
+}
+.product-cart-wrap .product-detail-rating span{
+    display: flex;
+    margin-left: .5em;
+}
+.product-cart-wrap .product-detail-rating{
+    justify-content: left;
+    padding: 0;
+}
+.product-page-intro{
+    max-width:680px;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+
+.row.related-products .product-cart-wrap .product-detail-rating{
+    justify-content: center;
+}
+
+/**********************************/
+/* PAGE :: PRODUCT PAGE */
+
+.description p, .description ul{
+    font-size: 1rem;
+    margin-bottom: .9rem;
+}
+.description li{
+    margin-bottom: .5rem;
+}
+.product-more-infor li span {
+    margin-right: 2rem;
+}
+
+/**********************************/
+/* PAGE :: SINGLE ARTICLE LIKE BLOG POST */
+.single-page h2{
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+.single-content h3 {
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+    margin-top: 1.6em;
+}
+.single-content p, .single-content ul li{
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}

@@ -1,0 +1,20 @@
+extends ../layouts/_template-shop-products
+include ../includes/products
+
+
+block vars
+	- var page_title = "All Blackwork patterns"
+	- var page_description = "Modern blackwork patterns featuring animals, nature and rainbows"
+	- var meta_og_type = ""
+	- var meta_og_url = ""
+	- var meta_og_image = ""
+
+	- var product_category = false
+	- var category_list = products
+
+	- var title = "Modern blackwork patterns"
+	- var intro = "Here is a list of all my blackwork patterns, available to purchase from my Etsy store. Learn about each pattern by clicking on each of the thumbnails below."
+
+block nav
+	- var active = "patterns"
+	- var sub_active = "all-patterns"
