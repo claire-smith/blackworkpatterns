@@ -49,6 +49,7 @@ a{
 .sticky-bar, .sticky-bar.stick {
     box-shadow: 0 8px 20px 0 rgb(0 0 0 / 19%);
 	border-bottom:none;
+    z-index: 99999;
 }
 .main-menu > nav > ul > li:hover > a {
     color: #BC58BC;
@@ -112,6 +113,11 @@ a{
 .carausel-feat .card-1 {
     margin-right: 12px;
     margin-left: 12px;
+}
+.slider-arrow .slider-btn{
+    color: white;
+    background: #BC58BC;
+    border-color: #BC58BC;
 }
 
 /**********************************/
