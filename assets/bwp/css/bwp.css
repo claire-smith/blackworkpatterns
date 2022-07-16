@@ -6,7 +6,37 @@ a{
 .btn{
     border-radius: 50px;
 }
-
+.tagline{
+    position: relative;
+    color: #BC58BC;
+    background: rgba(188, 88, 188, 0.2);
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 0.6em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.tagline:before, .tagline:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    border-top: 1.2em solid transparent;
+    border-bottom: 1.2em solid transparent;
+}
+.tagline:before {
+    border-right: 1em solid rgba(188, 88, 188, 0.2);
+    left: 0;
+    transform: translate(-1em, -50%);
+}
+.tagline:after {
+    border-left: 1em solid rgba(188, 88, 188, 0.2);
+    right: 0;
+    transform: translate(1em, -50%);
+}
 #footer{
     border-top:5px solid #BC58BC;
     background: #f7f7f7;
@@ -101,10 +131,19 @@ a{
 .banner-img.banner-1.home-3 .banner-text {
     background: rgb(229 241 255 / 55%);
 }
-.banner-2 a{
-    color:white;
+.banner-2 .banner-text:hover h4{
+    margin-left: 0;
 }
-
+.banner-2.banner-img .banner-text{
+    width: 100%;
+    text-align: center;
+}
+.banner-2.banner-img .banner-text h4{
+    margin-bottom: 0;
+}
+.banner-2.banner-img .banner-text span{
+    color:#BC58BC;
+}
 /*      Setion :: Feat patterns */
 .carausel-feat {
     overflow: hidden;
@@ -119,13 +158,30 @@ a{
     background: #BC58BC;
     border-color: #BC58BC;
 }
-
+.card-1 .price{
+    display: inline-block;
+    margin-top: 1em;
+    font-size: .8rem;
+}
 /**********************************/
 /* PAGE :: PRODUCTS LIST */
 
 .widget-category ul > li a.active {
     color: #BC58BC;
     font-weight: bold;
+}
+.product-cart-wrap{
+    border:none;
+}
+.product-cart-wrap:hover{
+    box-shadow: none;
+    -webkit-box-shadow:none;
+}
+.product-cart-wrap .product-content-wrap h2{
+    font-size: .9rem;
+}
+.product-cart-wrap .product-img-action-wrap .product-img{
+    border-radius: 10px;
 }
 .product-cart-wrap .product-rate{
     display: flex;
@@ -134,10 +190,21 @@ a{
 .product-cart-wrap .product-detail-rating span{
     display: flex;
     margin-left: .5em;
+    font-size: .7rem;
 }
 .product-cart-wrap .product-detail-rating{
     justify-content: left;
     padding: 0;
+}
+.product-price{
+    color:#626262;
+    font-size: .75rem;
+    font-family: "Spartan";
+}
+.product-cart-wrap .product-content-wrap .product-price span {
+    font-size: inherit;
+    font-weight: bold;
+    color: inherit;
 }
 .product-page-intro{
     max-width:680px;
@@ -148,6 +215,8 @@ a{
 .row.related-products .product-cart-wrap .product-detail-rating{
     justify-content: center;
 }
+
+
 
 /**********************************/
 /* PAGE :: PRODUCT PAGE */
