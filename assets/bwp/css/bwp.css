@@ -158,8 +158,13 @@ a{
     background: #BC58BC;
     border-color: #BC58BC;
 }
+
+
+.blog_article .blurb{
+    font-size:.9rem;
+}
 .card-1 .price{
-    display: inline-block;
+    display: block;
     margin-top: 1em;
     font-size: .8rem;
 }
