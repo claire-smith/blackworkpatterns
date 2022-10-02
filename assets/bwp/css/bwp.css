@@ -195,6 +195,10 @@ a{
 .product-cart-wrap .product-badges span.hot {
     background-color: #e76309;
 }
+.product-cart-wrap .product-img-action-wrap {
+    overflow: auto;
+    max-height: 100%;
+}
 .product-cart-wrap, .product-cart-wrap .product-img-action-wrap .product-img, .product-cart-wrap .product-img-action-wrap .product-img a img, .banner-img.banner-1.home-3, .hero-slider-1.style-3 .slider-img{
     border-radius: 0px;
 }

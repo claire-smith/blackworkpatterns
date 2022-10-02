@@ -4,8 +4,8 @@
 	position: relative;
 	background-color: #fff;
 	border: 1px solid #cce7d0;
-	border-radius: 25px;	
-	overflow: hidden;	
+	border-radius: 25px;
+	overflow: hidden;
 	@include transistion-duration-2s;
 
 	&:hover {
@@ -13,16 +13,16 @@
 	}
 
 	.product-img-action-wrap {
-		position: relative;
-		background-color: #fff;
+		//position: relative;
+		//background-color: #fff;
 		padding: 10px 12px;
-		overflow: hidden;
+		//overflow: hidden;
 		max-height: 320px;
 		.product-img {
 			position: relative;
 			overflow: hidden;
 			border-radius: 20px;
-			
+
 			a {
 				overflow: hidden;
 				display: flex;
@@ -50,7 +50,7 @@
 				}
 			}
 		}
-		
+
 	}
 	.product-action-1 {
 		position: absolute;
@@ -97,7 +97,7 @@
 				left: 50%;
 				position: absolute;
 				white-space: nowrap;
-				border-radius: 5px;					
+				border-radius: 5px;
 				font-size: 11px;
 				padding: 7px 10px;
 				color: #ffffff;
@@ -247,14 +247,14 @@
 				display: block;
 				overflow: hidden;
 				margin-left: 5px;
-			}	
+			}
 			&::before {
 				font-family: "uicons-regular-straight"  !important;
 				font-size: 11px;
 				letter-spacing: 2px;
 				content: '\f225' '\f225' '\f225' '\f225' '\f225';
 				color: $color-warning;
-			}		
+			}
 		}
 		.add-to-cart {
 			width: 44px;
@@ -613,7 +613,7 @@
 				}
 			}
 		}
-		
+
 	}
 }
 .sort-by-dropdown {
@@ -709,7 +709,7 @@
 				}
 			}
 		}
-		
+
 		h2 {
 			font-size: 22px;
 		}
@@ -725,7 +725,7 @@
 				bottom: unset;
 				padding: 0 20px;
 				margin-top: 20px;
-	
+
 				a.action-btn {
 					border: none;
 					width: auto;
@@ -746,7 +746,7 @@
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -1000,7 +1000,7 @@
 			line-height: 1;
 		}
 	}
-	
+
 }
 .button {
 	&.button-add-to-cart {
@@ -1112,7 +1112,7 @@
 }
 
 .product-detail-rating {
-	display: flex;	
+	display: flex;
 	align-items: center;
 	padding: 15px 0;
 	justify-content: space-between;
@@ -1166,7 +1166,7 @@
 }
 .progress-bar {
 	background-color: $color-brand;
-	
+
 }
 .shop-filter-toogle {
 	margin-bottom: 20px;
@@ -1186,7 +1186,7 @@
 				opacity: 1;
 				visibility: visible;
 				display: inline-block;
-				
+
 			}
 			&.angle-up {
 				opacity: 0;
@@ -1203,7 +1203,7 @@
 	padding: 30px;
 	-webkit-box-shadow: $box-shadown-3;
 	box-shadow: $box-shadown-3;
-	
+
 	.categor-list {
 		li {
 			font-size: 12px;
