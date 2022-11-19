@@ -89,6 +89,9 @@ a{
 .main-menu > nav > ul > li:hover > a {
     color: #BC58BC;
 }
+.main-menu > nav > ul > li ul.sub-menu{
+    z-index: 99999;
+}
 .header-action-btn-shop .btn, .btn-mobile-shop{
     background-color: #ef7513;
     border: none;
