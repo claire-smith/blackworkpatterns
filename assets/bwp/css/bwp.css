@@ -161,14 +161,27 @@ a{
 /* PAGE :: Home */
 
 /*      Section :: Banners */
+
+
+
+/* featured product of month */
 .banner-img.banner-1.home-3{
     margin-bottom: 0;
 }
-.banner-img.banner-2{
-    margin-top: 24px;
-}
 .banner-img.banner-1.home-3 .banner-text {
     background: rgb(229 241 255 / 55%);
+    padding: 10px 20px 15px;
+    top:20%;
+}
+.banner-img.banner-1.home-3 .sub-title{
+    font-size: 12px;
+}
+.banner-img.banner-1.home-3 h4{
+    margin-bottom: 0;margin-top: 10px;
+}
+
+.banner-img.banner-2{
+    margin-top: 24px;
 }
 .banner-2 .banner-text:hover h4{
     margin-left: 0;
