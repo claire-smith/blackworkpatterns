@@ -69,6 +69,9 @@ a{
     width: 72px;
     min-width: 72px;
 }
+.page-header .breadcrumb {
+    text-transform: none;
+}
 
         /* Navigation bar */
 .main-menu.main-menu-mrg-1 {
@@ -306,4 +309,5 @@ a{
 }
 .blog-article-sidebar h2{
     font-size: 20px;
+    text-align: center;
 }
