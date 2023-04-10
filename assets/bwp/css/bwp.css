@@ -41,7 +41,30 @@ a{
     border-top:5px solid #BC58BC;
     background: #f7f7f7;
 }
-
+#footer .foot-column:first-child{
+    margin-bottom: 2rem;
+}
+#footer .etsy-button{
+    background-color: #F45800;
+    color:white;
+    font-weight: bold;
+    padding: 0.8em 1.4em;
+    border-radius: 10px;
+    display: inline-flex;
+    font-size: .9em;
+    margin-top:1rem;
+    opacity: .8;
+}
+#footer .etsy-button:hover, #footer .etsy-button:focus{
+    opacity: 1;
+}
+#footer .etsy-button img{
+    height: 22px;
+    margin-right: 0.5em;
+}
+.mobile-social-icon a img{
+    opacity: .8;
+}
 .product-cart-wrap:hover .product-img-zoom a img {
     -webkit-transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
     transform: scale3d(1.20, 1.20, 1.20) translateZ(0);
@@ -211,16 +234,25 @@ a{
     background: #BC58BC;
     border-color: #BC58BC;
 }
-
-
-.blog_article .blurb{
-    font-size:.9rem;
-}
 .card-1 .price{
     display: block;
     margin-top: 1em;
     font-size: .8rem;
 }
+
+/*      Setion :: Categories */
+.category-grid{
+    margin-top: 3rem;
+}
+.category-grid .card-1 figure, .category-grid .card-1 figure img{
+    border-radius: 9px;
+}
+
+/*      Setion :: Blog */
+.blog_article .blurb{
+    font-size:.9rem;
+}
+
 /**********************************/
 /* PAGE :: PRODUCTS LIST */
 
