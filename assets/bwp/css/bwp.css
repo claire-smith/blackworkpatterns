@@ -257,6 +257,10 @@ a{
     margin-top: 1em;
     font-size: .8rem;
 }
+.product-cart-wrap .product-img-action-wrap .product-img a img{
+    width:100%;
+    height: auto;
+}
 
 /*      Setion :: Categories */
 .category-grid{
