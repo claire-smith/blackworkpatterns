@@ -275,6 +275,40 @@ a{
     font-size:.9rem;
 }
 
+/*      Section :: Customer reviews / testimonials */
+.section-testimonials{
+    background: rgb(108 18 120 / 17%);
+    padding-top: 2.4rem;
+}
+.section-testimonials h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.section-testimonials h3 img {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+.section-testimonials .testimonial-card .stars{
+    background: white url(../imgs/icons/stars.png) no-repeat center center;
+    width: 76px;
+    height: 15px;
+    padding: 1rem 3rem;
+    display: inline-flex;
+    border-radius: 8px;
+    margin-top: 0.7rem;
+}
+.testimonial-card {
+    text-align: center;
+    margin: 2rem;
+}
+.testimonial-card .author{
+    font-weight: bold;
+}
 /**********************************/
 /* PAGE :: PRODUCTS LIST */
 
