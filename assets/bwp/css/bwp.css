@@ -3,6 +3,9 @@
 a{
 	color:#BC58BC;
 }
+h1 {
+    font-size: 28px;
+}
 .btn{
     border-radius: 50px;
 }
@@ -261,7 +264,9 @@ a{
     width:100%;
     height: auto;
 }
-
+.product-cart-wrap .product-img-action-wrap {
+    padding: 10px 0 12px;
+}
 /*      Setion :: Categories */
 .category-grid{
     margin-top: 3rem;
