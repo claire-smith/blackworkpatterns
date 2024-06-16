@@ -227,6 +227,9 @@ h1 {
 .banner-img.banner-2{
     margin-top: 24px;
 }
+.banner-img:hover img{
+    opacity: 0.7;
+}
 .banner-2 .banner-text:hover h4{
     margin-left: 0;
 }
