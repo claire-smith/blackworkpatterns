@@ -420,3 +420,8 @@ h1 {
     font-size: 20px;
     text-align: center;
 }
+
+/** Instagram overlay */
+.j-overlay{
+    z-index: 100000 !important;
+}
