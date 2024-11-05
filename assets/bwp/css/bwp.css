@@ -372,7 +372,8 @@ h1 {
 .product-page-intro{
     max-width:680px;
     margin-bottom: 2rem;
-    font-size: .9rem;
+    font-size: .95rem;
+    margin-top: 1.7rem;
 }
 
 .row.related-products .product-cart-wrap .product-detail-rating{
