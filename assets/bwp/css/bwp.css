@@ -201,6 +201,10 @@ h1 {
 .message p a:focus, .message p a:hover{
     text-decoration: underline;
 }
+.message span{
+    text-decoration: underline;
+    padding-left: 10px;
+}
 /**********************************/
 /* PAGE :: Home */
 
